@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     // MARK: Outlets
     @IBOutlet weak var tempLabel: UILabel!
@@ -32,6 +32,13 @@ class ViewController: UIViewController, UIPickerViewDataSource {
     // 2) returns the # of rows in each component
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 150
+    }
+    
+    // MARK: UIPickerViewDelgate methods
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        print("titleForRow row: \(row), component \(component)")
+        return "test"
     }
 
 }
