@@ -34,12 +34,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return 150
     }
     
-    // MARK: UIPickerViewDelgate methods
+    // MARK: Optional UIPickerViewDelgate methods
 
+    // 1) return either a plain NSString, a NSAttributedString, or a view (e.g UILabel) to display the row for the component
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         print("titleForRow row: \(row), component \(component)")
         return "test"
     }
 
+    // 2) manages behavior when row is selected
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("didSelectRow \(row)")
+    }
 }
 
