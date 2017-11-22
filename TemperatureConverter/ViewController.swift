@@ -57,7 +57,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         print("didSelectRow \(row)")
         
         let tempF = celsiusToF(celsius: Double(row))
-        tempLabel.text = String(tempF)
+        tempLabel.text = String(format: "%.2f", tempF) + "℉"
     }
     
     func celsiusToF(celsius: Double) -> Double {
