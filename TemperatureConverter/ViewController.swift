@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDataSource {
 
     // MARK: Outlets
     @IBOutlet weak var tempLabel: UILabel!
@@ -18,6 +18,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    // MARK: UIPickerViewDataSource methods
+    // 1) numberOfComponents
+    // 2) numberOfRowsInComponent
+    
+    // 1) returns the number of 'columns' to display.
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // 2) returns the # of rows in each component
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 150
     }
 
 }
