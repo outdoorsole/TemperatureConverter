@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    // MARK: Properties
+    // empty array to store temperatures
+    var temps = [Int]()
+    
     // MARK: Outlets
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -18,6 +22,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // populate the empty array with values
+        for index in -50...150 {
+            temps.append(index)
+        }
     }
     
     // MARK: UIPickerViewDataSource methods
@@ -31,7 +40,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     // 2) returns the # of rows in each component
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 150
+        return 201
     }
     
     // MARK: Optional UIPickerViewDelgate methods
@@ -39,7 +48,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     // 1) return either a plain NSString, a NSAttributedString, or a view (e.g UILabel) to display the row for the component
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         print("titleForRow row: \(row), component \(component)")
-        return "test"
+        return String(temps[row])
     }
 
     // 2) manages behavior when row is selected
