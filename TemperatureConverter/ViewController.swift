@@ -55,6 +55,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     // 2) manages behavior when row is selected
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("didSelectRow \(row)")
+        
+        let tempF = celsiusToF(celsius: Double(row))
+        tempLabel.text = String(tempF)
     }
+    
+    func celsiusToF(celsius: Double) -> Double {
+        return celsius * (9/5) + 32
+    }
+    
 }
 
