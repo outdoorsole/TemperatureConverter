@@ -40,7 +40,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     // 2) returns the # of rows in each component
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 201
+        // same as num items in array
+        return temps.count
     }
     
     // MARK: Optional UIPickerViewDelgate methods
