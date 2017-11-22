@@ -58,6 +58,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         let tempF = celsiusToF(celsius: Double(row))
         tempLabel.text = String(format: "%.2f", tempF) + "℉"
+        
+        if temps[row] < 0 {
+            imageView.image = UIImage(named: "ice")
+        } else if temps[row] < 100 {
+            imageView.image = UIImage(named: "water")
+        } else {
+            imageView.image = UIImage(named: "steam")
+        }
     }
     
     func celsiusToF(celsius: Double) -> Double {
