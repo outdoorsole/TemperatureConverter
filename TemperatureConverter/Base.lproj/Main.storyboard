@@ -38,6 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuv-Zr-84w">
                                 <rect key="frame" x="144" y="585" width="86" height="30"/>
                                 <state key="normal" title="Switch Units"/>
+                                <connections>
+                                    <segue destination="OxU-Iy-V6p" kind="presentation" id="xhB-O8-OKi"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHR-Nc-hbu">
                                 <rect key="frame" x="0.0" y="319" width="375" height="216"/>
