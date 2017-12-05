@@ -23,6 +23,12 @@ class CtoFViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // Set the default selected row
+        let totalRows = celsiusPicker.numberOfRows(inComponent: 0)
+        let initialRow = totalRows / 2
+        
+        celsiusPicker.selectRow(initialRow, inComponent: 0, animated: true)
+        
         // populate the empty array with values
         for index in -50...150 {
             temps.append(index)

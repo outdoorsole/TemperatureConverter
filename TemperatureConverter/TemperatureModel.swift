@@ -9,5 +9,11 @@
 import Foundation
 
 class TemperatureModel {
+    func toFahrenheit(celsius: Int) -> String {
+        return String(Double(celsius) * 1.8 + 32)
+    }
     
+    func toCelsius(fahrenheit: Int) -> String {
+        return String((5/9) * (Double(fahrenheit) - 32))
+    }
 }

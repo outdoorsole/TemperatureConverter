@@ -23,6 +23,12 @@ class FtoCViewController: UIViewController, UIPickerViewDataSource, UIPickerView
 
         // Do any additional setup after loading the view.
         
+        // Set the default selected row
+        let totalRows = fahrenheitPicker.numberOfRows(inComponent: 0)
+        let initialRow = totalRows / 2
+        
+        fahrenheitPicker.selectRow(initialRow, inComponent: 0, animated: true)
+        
         // populate the empty array with values
         for index in 0...250 {
             temps.append(index)
