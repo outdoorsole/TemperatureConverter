@@ -11,7 +11,7 @@ import UIKit
 class CtoFViewController: UIViewController, UIPickerViewDelegate {
 
     // MARK: Properties
-    let tempModel = TemperatureModel()
+    let tempModel = FahrenheitTemperatureModel()
     var tempRange = TemperatureRange()
     
     // MARK: Outlets
