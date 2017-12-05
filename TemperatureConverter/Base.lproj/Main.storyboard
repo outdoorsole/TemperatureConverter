@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--FtoC View Controller-->
         <scene sceneID="qTw-QZ-gq0">
             <objects>
-                <viewController id="OxU-Iy-V6p" sceneMemberID="viewController">
+                <viewController id="OxU-Iy-V6p" customClass="FtoCViewController" customModule="TemperatureConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gPC-Up-Y1X"/>
                         <viewControllerLayoutGuide type="bottom" id="GBy-pV-5mg"/>
@@ -102,6 +102,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imL-Y7-R9S">
                                 <rect key="frame" x="144" y="585" width="86" height="30"/>
                                 <state key="normal" title="Switch Units"/>
+                                <connections>
+                                    <action selector="switchButton:" destination="OxU-Iy-V6p" eventType="touchUpInside" id="iC3-3Z-ruq"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbG-Ok-Kg1">
                                 <rect key="frame" x="0.0" y="319" width="375" height="216"/>

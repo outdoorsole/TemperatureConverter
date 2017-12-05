@@ -13,6 +13,7 @@
 		1600EB3B1FC5F0900030D939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1600EB3A1FC5F0900030D939 /* Assets.xcassets */; };
 		1600EB3E1FC5F0900030D939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1600EB3C1FC5F0900030D939 /* LaunchScreen.storyboard */; };
 		1600EB461FC634700030D939 /* TemperatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600EB451FC634700030D939 /* TemperatureModel.swift */; };
+		160A91B71FD67814002F78A7 /* FtoCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A91B61FD67814002F78A7 /* FtoCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1600EB3D1FC5F0900030D939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1600EB3F1FC5F0900030D939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1600EB451FC634700030D939 /* TemperatureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureModel.swift; sourceTree = "<group>"; };
+		160A91B61FD67814002F78A7 /* FtoCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FtoCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				1600EB331FC5F0900030D939 /* AppDelegate.swift */,
 				1600EB351FC5F0900030D939 /* ViewController.swift */,
+				160A91B61FD67814002F78A7 /* FtoCViewController.swift */,
 				1600EB371FC5F0900030D939 /* Main.storyboard */,
 				1600EB451FC634700030D939 /* TemperatureModel.swift */,
 				1600EB3A1FC5F0900030D939 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				1600EB361FC5F0900030D939 /* ViewController.swift in Sources */,
 				1600EB341FC5F0900030D939 /* AppDelegate.swift in Sources */,
+				160A91B71FD67814002F78A7 /* FtoCViewController.swift in Sources */,
 				1600EB461FC634700030D939 /* TemperatureModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
