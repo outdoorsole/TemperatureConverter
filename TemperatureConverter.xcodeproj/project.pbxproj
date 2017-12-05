@@ -12,6 +12,7 @@
 		1600EB391FC5F0900030D939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1600EB371FC5F0900030D939 /* Main.storyboard */; };
 		1600EB3B1FC5F0900030D939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1600EB3A1FC5F0900030D939 /* Assets.xcassets */; };
 		1600EB3E1FC5F0900030D939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1600EB3C1FC5F0900030D939 /* LaunchScreen.storyboard */; };
+		1600EB461FC634700030D939 /* TemperatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600EB451FC634700030D939 /* TemperatureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1600EB3A1FC5F0900030D939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1600EB3D1FC5F0900030D939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1600EB3F1FC5F0900030D939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1600EB451FC634700030D939 /* TemperatureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1600EB331FC5F0900030D939 /* AppDelegate.swift */,
 				1600EB351FC5F0900030D939 /* ViewController.swift */,
 				1600EB371FC5F0900030D939 /* Main.storyboard */,
+				1600EB451FC634700030D939 /* TemperatureModel.swift */,
 				1600EB3A1FC5F0900030D939 /* Assets.xcassets */,
 				1600EB3C1FC5F0900030D939 /* LaunchScreen.storyboard */,
 				1600EB3F1FC5F0900030D939 /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				1600EB361FC5F0900030D939 /* ViewController.swift in Sources */,
 				1600EB341FC5F0900030D939 /* AppDelegate.swift in Sources */,
+				1600EB461FC634700030D939 /* TemperatureModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VKKZ6JX7SH;
 				INFOPLIST_FILE = TemperatureConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maribelmontejano.TemperatureConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VKKZ6JX7SH;
 				INFOPLIST_FILE = TemperatureConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maribelmontejano.TemperatureConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +308,7 @@
 				1600EB441FC5F0900030D939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
