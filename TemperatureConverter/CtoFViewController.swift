@@ -8,11 +8,11 @@
 
 import UIKit
 
-class CtoFViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class CtoFViewController: UIViewController, UIPickerViewDelegate {
 
     // MARK: Properties
-    // empty array to store temperatures
-    var temps = [Int]()
+    let tempModel = TemperatureModel()
+    var tempRange = TemperatureRange()
     
     // MARK: Outlets
     @IBOutlet weak var tempLabel: UILabel!
@@ -29,25 +29,9 @@ class CtoFViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
         celsiusPicker.selectRow(initialRow, inComponent: 0, animated: true)
         
-        // populate the empty array with values
-        for index in -50...150 {
-            temps.append(index)
-        }
-    }
-    
-    // MARK: UIPickerViewDataSource methods
-    // 1) numberOfComponents
-    // 2) numberOfRowsInComponent
-    
-    // 1) returns the number of 'columns' to display.
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    // 2) returns the # of rows in each component
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        // same as num items in array
-        return temps.count
+        // Set up values and image for initial row
+        pickerView(celsiusPicker, didSelectRow: initialRow, inComponent: 0)
+        
     }
     
     // MARK: Optional UIPickerViewDelgate methods
@@ -55,27 +39,14 @@ class CtoFViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     // 1) return either a plain NSString, a NSAttributedString, or a view (e.g UILabel) to display the row for the component
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         print("titleForRow row: \(row), component \(component)")
-        return String(temps[row])
+        return String(tempRange.temps[row])
     }
 
     // 2) manages behavior when row is selected
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("didSelectRow \(row)")
-        
-        let tempF = celsiusToF(celsius: Double(row))
-        tempLabel.text = String(format: "%.2f", tempF) + "℉"
-        
-        if temps[row] < 0 {
-            imageView.image = UIImage(named: "ice")
-        } else if temps[row] < 100 {
-            imageView.image = UIImage(named: "water")
-        } else {
-            imageView.image = UIImage(named: "steam")
-        }
-    }
-    
-    func celsiusToF(celsius: Double) -> Double {
-        return celsius * (9/5) + 32
+        let tempC = tempRange.temps[row]
+        tempLabel.text = ("\(tempModel.toFahrenheit(celsius: tempC)) ℉")
+        imageView.image = tempModel.getImage(celsius: tempC)
     }
     
 }
