@@ -12,7 +12,7 @@ class CtoFViewController: UIViewController, UIPickerViewDelegate {
 
     // MARK: Properties
     let tempModel = FahrenheitTemperatureModel()
-    var tempRange = TemperatureRange()
+    var tempRange = FahrenheitTemperatureRange()
     
     // MARK: Outlets
     @IBOutlet weak var tempLabel: UILabel!

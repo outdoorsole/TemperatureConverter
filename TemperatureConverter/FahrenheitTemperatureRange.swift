@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TemperatureRange: NSObject, UIPickerViewDataSource {
+class FahrenheitTemperatureRange: NSObject, UIPickerViewDataSource {
     var temps = [Int]()
     
     override init() {

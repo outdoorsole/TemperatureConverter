@@ -71,7 +71,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="DyP-Fr-evC" userLabel="TempRange" customClass="TemperatureRange" customModule="TemperatureConverter" customModuleProvider="target"/>
+                <customObject id="DyP-Fr-evC" userLabel="TempRange" customClass="FahrenheitTemperatureRange" customModule="TemperatureConverter" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
