@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CtoFViewController.swift
 //  TemperatureConverter
 //
 //  Created by Maribel Montejano on 11/22/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class CtoFViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     // MARK: Properties
     // empty array to store temperatures
