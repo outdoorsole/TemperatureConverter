@@ -15,6 +15,8 @@
 		1600EB461FC634700030D939 /* FahrenheitTemperatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600EB451FC634700030D939 /* FahrenheitTemperatureModel.swift */; };
 		160A91B71FD67814002F78A7 /* FtoCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A91B61FD67814002F78A7 /* FtoCViewController.swift */; };
 		160A91B91FD67F31002F78A7 /* FahrenheitTemperatureRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A91B81FD67F31002F78A7 /* FahrenheitTemperatureRange.swift */; };
+		160A91BB1FD684AE002F78A7 /* CelsiusTemperatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A91BA1FD684AE002F78A7 /* CelsiusTemperatureModel.swift */; };
+		160A91BD1FD6856A002F78A7 /* CelsiusTemperatureRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A91BC1FD6856A002F78A7 /* CelsiusTemperatureRange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		1600EB451FC634700030D939 /* FahrenheitTemperatureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrenheitTemperatureModel.swift; sourceTree = "<group>"; };
 		160A91B61FD67814002F78A7 /* FtoCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FtoCViewController.swift; sourceTree = "<group>"; };
 		160A91B81FD67F31002F78A7 /* FahrenheitTemperatureRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FahrenheitTemperatureRange.swift; sourceTree = "<group>"; };
+		160A91BA1FD684AE002F78A7 /* CelsiusTemperatureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelsiusTemperatureModel.swift; sourceTree = "<group>"; };
+		160A91BC1FD6856A002F78A7 /* CelsiusTemperatureRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelsiusTemperatureRange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,9 @@
 				160A91B61FD67814002F78A7 /* FtoCViewController.swift */,
 				1600EB371FC5F0900030D939 /* Main.storyboard */,
 				1600EB451FC634700030D939 /* FahrenheitTemperatureModel.swift */,
+				160A91BA1FD684AE002F78A7 /* CelsiusTemperatureModel.swift */,
 				160A91B81FD67F31002F78A7 /* FahrenheitTemperatureRange.swift */,
+				160A91BC1FD6856A002F78A7 /* CelsiusTemperatureRange.swift */,
 				1600EB3A1FC5F0900030D939 /* Assets.xcassets */,
 				1600EB3C1FC5F0900030D939 /* LaunchScreen.storyboard */,
 				1600EB3F1FC5F0900030D939 /* Info.plist */,
@@ -147,9 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				160A91B91FD67F31002F78A7 /* FahrenheitTemperatureRange.swift in Sources */,
+				160A91BB1FD684AE002F78A7 /* CelsiusTemperatureModel.swift in Sources */,
 				1600EB361FC5F0900030D939 /* CtoFViewController.swift in Sources */,
 				1600EB341FC5F0900030D939 /* AppDelegate.swift in Sources */,
 				160A91B71FD67814002F78A7 /* FtoCViewController.swift in Sources */,
+				160A91BD1FD6856A002F78A7 /* CelsiusTemperatureRange.swift in Sources */,
 				1600EB461FC634700030D939 /* FahrenheitTemperatureModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -110,7 +110,7 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbG-Ok-Kg1">
                                 <rect key="frame" x="0.0" y="319" width="375" height="216"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="OxU-Iy-V6p" id="cbk-UO-UzO"/>
+                                    <outlet property="dataSource" destination="Z2U-MD-k3m" id="Xr9-O5-vzm"/>
                                     <outlet property="delegate" destination="OxU-Iy-V6p" id="CZj-IB-So2"/>
                                 </connections>
                             </pickerView>
@@ -135,6 +135,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJy-mQ-Mjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Z2U-MD-k3m" userLabel="TempRange" customClass="CelsiusTemperatureRange" customModule="TemperatureConverter" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="817" y="124"/>
         </scene>
