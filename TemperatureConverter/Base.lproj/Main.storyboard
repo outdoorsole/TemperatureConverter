@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17B48" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,27 +22,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I40-ui-VHa">
-                                <rect key="frame" x="67" y="164" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I40-ui-VHa">
+                                <rect key="frame" x="67" y="141" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cX3-nM-gTF"/>
+                                    <constraint firstAttribute="width" constant="240" id="lby-Ob-Vlv"/>
+                                </constraints>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHR-Nc-hbu">
-                                <rect key="frame" x="0.0" y="377" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EN-Uh-qs5">
+                                <rect key="frame" x="174" y="70" width="27" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuv-Zr-84w">
+                                <rect key="frame" x="144" y="585" width="86" height="30"/>
+                                <state key="normal" title="Switch Units"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHR-Nc-hbu">
+                                <rect key="frame" x="0.0" y="319" width="375" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="qOI-H0-PtX"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="VqK-F6-11l"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EN-Uh-qs5">
-                                <rect key="frame" x="118" y="76" width="138" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I40-ui-VHa" firstAttribute="top" secondItem="0EN-Uh-qs5" secondAttribute="bottom" constant="50" id="Aya-qL-3e6"/>
+                            <constraint firstItem="iuv-Zr-84w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FMl-0r-cdf"/>
+                            <constraint firstItem="I40-ui-VHa" firstAttribute="centerX" secondItem="iuv-Zr-84w" secondAttribute="centerX" id="Ios-LD-Ov5"/>
+                            <constraint firstItem="MHR-Nc-hbu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kqc-41-4jv"/>
+                            <constraint firstItem="0EN-Uh-qs5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qok-20-gph"/>
+                            <constraint firstItem="iuv-Zr-84w" firstAttribute="top" secondItem="MHR-Nc-hbu" secondAttribute="bottom" constant="50" id="acO-qd-qjR"/>
+                            <constraint firstItem="I40-ui-VHa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eL8-ny-495"/>
+                            <constraint firstItem="MHR-Nc-hbu" firstAttribute="top" secondItem="I40-ui-VHa" secondAttribute="bottom" constant="50" id="esH-V2-K2h"/>
+                            <constraint firstItem="0EN-Uh-qs5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="70" id="jxZ-Ra-Sp2"/>
+                            <constraint firstAttribute="trailing" secondItem="MHR-Nc-hbu" secondAttribute="trailing" id="v21-4G-acL"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="celsiusPicker" destination="MHR-Nc-hbu" id="47K-hy-Nkl"/>
